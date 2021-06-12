@@ -1,2 +1,4 @@
 site_name: Unofficial Quest3D Documentation
-site_url: https://example.com/
+site_url: https://audiosurfresearch.github.io/Unofficial-Quest3D-Docs/
+theme:
+  name: material
