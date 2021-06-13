@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://audiosurfresearch.github.io/Unofficial-Quest3D-Docs/">
+        <link rel="canonical" href="https://audiosurfresearch.github.io/Unofficial-Quest3D-Docs/internals/EngineInterface/">
       
-      <link rel="icon" href="img/icon_white.png">
+      <link rel="icon" href="../../img/icon_white.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.7">
     
     
       
-        <title>Unofficial Quest3D Documentation</title>
+        <title>EngineInterface - Unofficial Quest3D Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -57,7 +57,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#engineinterface" class="md-skip">
           Skip to content
         </a>
       
@@ -76,9 +76,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Unofficial Quest3D Documentation" class="md-header__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
+    <a href="../.." title="Unofficial Quest3D Documentation" class="md-header__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
       
-  <img src="img/icon_white.png" alt="logo">
+  <img src="../../img/icon_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              EngineInterface
             
           </span>
         </div>
@@ -155,9 +155,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Unofficial Quest3D Documentation" class="md-nav__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
+    <a href="../.." title="Unofficial Quest3D Documentation" class="md-nav__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
       
-  <img src="img/icon_white.png" alt="logo">
+  <img src="../../img/icon_white.png" alt="logo">
 
     </a>
     Unofficial Quest3D Documentation
@@ -171,21 +171,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Welcome
       </a>
-      
     </li>
   
 
@@ -219,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="file-formats/cgr-files/" class="md-nav__link">
+      <a href="../../file-formats/cgr-files/" class="md-nav__link">
         .cgr files
       </a>
     </li>
@@ -231,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="file-formats/q3d-files/" class="md-nav__link">
+      <a href="../../file-formats/q3d-files/" class="md-nav__link">
         .q3d files
       </a>
     </li>
@@ -250,12 +240,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Internals
@@ -273,7 +265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="internals/A3d_Channel/" class="md-nav__link">
+      <a href="../A3d_Channel/" class="md-nav__link">
         A3d_Channel
       </a>
     </li>
@@ -283,11 +275,51 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="internals/EngineInterface/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          EngineInterface
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         EngineInterface
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    Info
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -317,6 +349,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    Info
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -328,10 +375,19 @@
               
                 
                 
-                <h1 id="welcome">Welcome</h1>
-<p>Here you can find info about Quest3D's internals.
-This documentation is in a very early state and a lot has yet to be discovered.</p>
-<p>Contributions are welcome!</p>
+                <h1 id="engineinterface">EngineInterface</h1>
+<p>File: <code>highpoly.dll</code></p>
+<h2 id="info">Info</h2>
+<p><strong><code>EngineInterface</code> is a class that represents the entire Quest3D engine and as such, it can be used for many things, including:</strong></p>
+<ul>
+<li>Loading channel groups from files</li>
+<li>Creating channel groups at runtime</li>
+<li>Deleting channel groups</li>
+<li>Getting channel groups from their index number</li>
+<li>Getting the install directory of the engine (directory that <code>highpoly.dll</code> is in)</li>
+<li>Creating channels from types</li>
+<li>Adding/removing channels from the event system</li>
+</ul>
                 
               
               
@@ -350,21 +406,21 @@ This documentation is in a very early state and a lot has yet to be discovered.<
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-      
         
-        <a href="file-formats/cgr-files/" class="md-footer__link md-footer__link--next" aria-label="Next: .cgr files" rel="next">
+        <a href="../A3d_Channel/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A3d_Channel" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              .cgr files
+              A3d_Channel
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
@@ -387,10 +443,10 @@ This documentation is in a very early state and a lot has yet to be discovered.<
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>

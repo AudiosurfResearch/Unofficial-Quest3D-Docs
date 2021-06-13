@@ -11,7 +11,7 @@
       
         <link rel="canonical" href="https://audiosurfresearch.github.io/Unofficial-Quest3D-Docs/file-formats/cgr-files/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/icon_white.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.7">
     
     
@@ -24,6 +24,10 @@
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
         
       
     
@@ -50,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -74,8 +78,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Unofficial Quest3D Documentation" class="md-header__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/icon_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -154,8 +157,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Unofficial Quest3D Documentation" class="md-nav__button md-logo" aria-label="Unofficial Quest3D Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../img/icon_white.png" alt="logo">
 
     </a>
     Unofficial Quest3D Documentation
@@ -281,6 +283,60 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Internals
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Internals" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Internals
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internals/A3d_Channel/" class="md-nav__link">
+        A3d_Channel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internals/EngineInterface/" class="md-nav__link">
+        EngineInterface
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -336,12 +392,13 @@
                 <h1 id="cgr-files">.cgr files</h1>
 <p>.cgr files are <strong>Channel group files</strong>.</p>
 <h2 id="information">Information</h2>
-<p>They store channel graphs, images/textures, 3D models and audio and are vital for games to function. It's also possible to load a .cgr file from disk or download one from a server and load it at runtime. This is utilized by Audiosurf during loading and to download songs for Audiosurf Radio.</p>
+<p>They store channel graphs, images/textures, 3D models and audio but are also able to store any other arbitrary data (save data for example). They are vital for games to function. It's also possible to load a .cgr file from disk or download one from a server and load it at runtime. This is utilized by Audiosurf during loading and to download songs for Audiosurf Radio.</p>
 <p>Optionally, .cgr files can be compressed (this feature uses the <a href="https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm">LZMA compression algorithm</a>) and protected, preventing them from being opened in the Quest3D editor. However, this is easily bypassed by using <a href="https://github.com/AudiosurfResearch/Quest3DTamperer">Quest3DTamperer</a>.</p>
 <p>As of now, the only tool that is able to extract files from a .cgr file is <a href="https://www.scampers.org/steve/sms/other.htm">Ravioli Game Tools</a>, but it only works with Audiosurf Radio songs.</p>
 <h2 id="format">Format</h2>
 <p><strong>Not a lot is known about this so far, contributions are appreciated.</strong></p>
 <p>Compressed .cgr files contain the string <code>ACTF</code> at the beginning of the file.</p>
+<p>.cgr files store data in "tags" which are 4-letter strings.</p>
                 
               
               
