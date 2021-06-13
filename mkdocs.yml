@@ -2,3 +2,7 @@ site_name: Unofficial Quest3D Documentation
 site_url: https://audiosurfresearch.github.io/Unofficial-Quest3D-Docs/
 theme:
   name: material
+  palette:
+    primary: black
+  logo: img/icon_white.png
+  favicon: img/icon_white.png
